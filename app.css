@@ -238,7 +238,7 @@ color: #333333;
 
 
 
-@media  screen and (min-width : 600px) {
+@media  screen and (min-width : 719px) {
 
     .header {
         display: flex;
@@ -254,17 +254,26 @@ color: #333333;
 
     .main {
         display: flex;
+        justify-content: space-around;
         flex-direction: row;
-        justify-content: space-between;
+        
+        flex-wrap:wrap;
+        
+        
         
 
-        gap: 50px;
+        
+    }
+
+    .component {
+        width: 45%;
     }
 
     body {
         display: flex;
         justify-content: center;
     }
+
 
     .container {
        
@@ -276,7 +285,52 @@ color: #333333;
     }
 
 
+}
 
+@media  screen and (min-width : 1075px) {
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        flex-wrap:wrap;
+        
+        
+        
+
+        
+    }
+
+    
+    .component {
+        width: 30%;
+    }
+
+}
+
+@media  screen and (max-width : 719px) {
+
+    .cta > span {
+
+        padding: 10px;
+
+
+
+
+
+    }
+
+    .desc {
+        
+        font-size: 15px;
+        line-height: 15px;
+       
+
+    }
+
+
+    
 
 
 }
